@@ -205,13 +205,16 @@ body {
 
 .new-arrivals {
     text-align: center;
-    padding: 50px 0;
-    background-color: #FFFFFF;
+    padding: 30px 10px;
+    background-color: #112D4E;
 }
 
 .new-arrivals h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 200;
 }
 
 .product-list {
@@ -250,14 +253,15 @@ body {
 }
 
 .product-item button:hover {
-    background-color: #003060;
+    background-color: #112D4E;
 }
 
 .product-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .product-card {
@@ -266,6 +270,7 @@ body {
     width: calc(25% - 20px); 
     text-align: center;
     margin-bottom: 100px; 
+    margin: 0 20px 100px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
