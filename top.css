@@ -360,86 +360,81 @@ body {
     }
 }
 
-footer {
-    background-color: #1a2c46;
-    color: white;
-    padding: 20px 0;
+
+.footer {
+    background-color: #DBE2EF;
+    color: #112D4E;
+    padding: 40px 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
 .footer-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #1a2c46; 
-}
-
-.footer-content {
     display: flex;
     justify-content: space-around;
-    padding: 5px 0;
+    flex-wrap: wrap;
+    padding: 0 20px; /* Padding to ensure content doesn't touch the edges */
+    width: 100%;
+    max-width: 100%; /* Ensures the container takes full width */
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
 .footer-section {
-    flex: 1;
-    padding: 0 20px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
-.footer-section h2 {
+.footer-section h2,
+.footer-section h3 {
     margin-bottom: 10px;
-    font-size: 1.5em;
 }
 
 .footer-section p,
-.footer-section ul,
-.footer-section ul li {
-    font-size: 0.9em;
-    line-height: 1.6;
+.footer-section ul {
+    margin: 0;
 }
 
 .footer-section ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .footer-section ul li {
-    margin: 5px 0;
+    margin-bottom: 10px;
 }
 
 .footer-section ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-}
-
-.footer-section ul li a:hover {
-    text-decoration: underline;
 }
 
 .footer-bottom {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 0;
-    border-top: 1px solid #555;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
 }
 
-.footer-bottom .follow-us {
-    margin-right: 10px;
+.social-icons {
+    margin-bottom: 10px;
 }
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #f0f0f0;
+}
+
 .footer-bottom p {
-    margin: 1px 0;
-}
-
-.socials {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.socials a {
-    margin: 1px;
-}
-
-.socials img {
-    width: 50px;
-    height: 50px;
+    margin: 0;
 }
