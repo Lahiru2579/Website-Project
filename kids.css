@@ -6,7 +6,6 @@ body {
     color: #212529;
 }
 
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -76,13 +75,14 @@ body {
     align-items: center;
     margin-right: 100px;
 }
+
 .cart-icon {
     width: 30px;
     height: 30px;
 }
 
 .secondary-navbar {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     padding: 10px 20px;
 }
 
@@ -99,7 +99,6 @@ body {
 .secondary-navbar ul li {
     padding: auto;
 }
-
 .secondary-navbar ul li a {
     text-decoration: none;
     color: #607d8b;
@@ -120,11 +119,13 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
 .text-section h1 {
     margin: 0;
     font-size: 36px;
     color: #273B61;
 }
+
 .text-section p {
     margin-top: 20px;
     font-size: 18px;
@@ -137,11 +138,6 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
-.collections {
-    padding: 50px 20px;
-    text-align: center;
-}
-
 .collections h1 {
     font-size: 2.5em;
     margin-bottom: 30px;
@@ -152,8 +148,8 @@ body {
 
 .collection-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted minmax values */
-    gap: 20px; /* Adjusted gap */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 70px;
 }
 
 .collection-item {
@@ -162,7 +158,6 @@ body {
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    width: 80%;
 }
 
 .collection-item:hover {
@@ -172,8 +167,8 @@ body {
 
 .collection-item img {
     width: 100%;
-    height: 300px; /* Adjusted height */
-    object-fit: cover;
+    height: auto;
+    border-bottom: 1px solid #ddd;
 }
 
 .collection-item h2 {
@@ -182,9 +177,10 @@ body {
     color: #DBE2EF;
 }
 
+
 .btn {
     display: inline-block;
-    margin: 30px 0;
+    margin: 15px 0;
     padding: 10px 20px;
     background-color: #DBE2EF;
     color: #090909;
@@ -200,58 +196,18 @@ body {
 
 .Open-image {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-left: 60px;
+    justify-content: left;
+    align-items: left;
+    margin-right: 20px;
+    text-align: right;
 }
 
 .Open-image img {
-    width: 40%;
+    width: 500px; 
     height: auto;
     border-radius: 70px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.open-text {
-    margin-left: 60px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #112D4E;
-}
-
-.open-text h1 {
-    font-size: 36px;
-    color: #112D4E;
-    margin: 0;
-}
-
-.open-text p {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #555;
-}
-
-
-@keyframes border-pulse {
-    0% {
-        transform: scale(1);
-        border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    50% {
-        transform: scale(1.05);
-        border-radius: 50px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    }
-    100% {
-        transform: scale(1);
-        border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+    transform: translateX(30%);
 }
 
 footer {
@@ -259,6 +215,7 @@ footer {
     color: white;
     padding: 20px 0;
 }
+
 .footer-container {
     width: 80%;
     margin: 0 auto;
@@ -266,39 +223,48 @@ footer {
     box-sizing: border-box;
     background-color: #1a2c46; 
 }
+
 .footer-content {
     display: flex;
     justify-content: space-around;
     padding: 5px 0;
 }
+
 .footer-section {
     flex: 1;
     padding: 0 20px;
 }
+
 .footer-section h2 {
     margin-bottom: 10px;
     font-size: 1.5em;
 }
+
 .footer-section p,
 .footer-section ul,
 .footer-section ul li {
     font-size: 0.9em;
     line-height: 1.6;
 }
+
 .footer-section ul {
     list-style-type: none;
     padding: 0;
 }
+
 .footer-section ul li {
     margin: 5px 0;
 }
+
 .footer-section ul li a {
     color: white;
     text-decoration: none;
 }
+
 .footer-section ul li a:hover {
     text-decoration: underline;
 }
+
 .footer-bottom {
     display: flex;
     justify-content: flex-end;
@@ -306,19 +272,23 @@ footer {
     padding: 10px 0;
     border-top: 1px solid #555;
 }
+
 .footer-bottom .follow-us {
     margin-right: 10px;
 }
 .footer-bottom p {
     margin: 1px 0;
 }
+
 .socials {
     display: flex;
     justify-content: flex-end;
 }
+
 .socials a {
     margin: 1px;
 }
+
 .socials img {
     width: 50px;
     height: 50px;

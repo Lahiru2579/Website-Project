@@ -15,23 +15,22 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #112D4E;
+    background-color: #112D4E; 
     padding: 10px 20px;
-    color: #DBE2EF;
+    color: #DBE2Ef;
 }
 
-.logo img {
-    width: 75px;
-    height: 75px;
+.logo-text {
+    font-family: 'Krona One', sans-serif;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 100px;
 }
 
 .search-container {
     display: flex;
     align-items: center;
     flex: 1;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 20px;
 }
 
@@ -55,7 +54,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #607d8b;
+    background-color: #607d8b; 
     border: none;
     padding: 10px;
     border-radius: 0 5px 5px 0;
@@ -73,18 +72,18 @@ html {
 }
 
 .account {
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .cart {
     display: flex;
     align-items: center;
+    margin-right: 100px;
 }
 
 .cart-icon {
     width: 30px;
     height: 30px;
-    margin-right: 5px;
 }
 
 .secondary-navbar {
@@ -98,12 +97,26 @@ html {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .secondary-navbar ul li {
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
+.secondary-navbar ul li a {
+    text-decoration: none;
+    color: #607d8b;
+    font-weight: 700; 
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 0px;
+}
+
+.secondary-navbar ul li a:hover {
+    color: #112D4E;
+}
 .secondary-navbar ul li a {
     text-decoration: none;
     color: #607d8b;
