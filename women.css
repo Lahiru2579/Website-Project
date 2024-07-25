@@ -97,9 +97,8 @@ body {
 }
 
 .secondary-navbar ul li {
-    padding: 0 50px;
+    padding: auto;
 }
-
 .secondary-navbar ul li a {
     text-decoration: none;
     color: #607d8b;
