@@ -68,12 +68,14 @@ body {
 
 .account {
     margin-right: 50px;
+    font-family: 'Inter', sans-serif;
 }
 
 .cart {
     display: flex;
     align-items: center;
     margin-right: 100px;
+    font-family: 'Inter', sans-serif;
 }
 
 .cart-icon {
@@ -97,7 +99,7 @@ body {
 }
 
 .secondary-navbar ul li {
-    padding: 0 50px;
+    padding: auto;
 }
 
 .secondary-navbar ul li a {
@@ -206,13 +208,13 @@ body {
 .new-arrivals {
     text-align: center;
     padding: 30px 10px;
-    background-color: #112D4E;
+    background-color: #DBE2EF;
 }
 
 .new-arrivals h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #fff;
+    color: #112D4E;
     font-family: 'Krona One', sans-serif;
     font-weight: 200;
 }
@@ -240,20 +242,23 @@ body {
 .product-item p {
     font-size: 1em;
     margin: 10px 0;
+    font-family: 'Inter', sans-serif;
 }
 
 .product-item button {
-    background-color: #004080;
+    background-color: #112D4E;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    font-family: 'Inter', sans-serif;
 }
 
 .product-item button:hover {
-    background-color: #112D4E;
+    background-color: #DBE2EF;
+    color: #112D4E;
 }
 
 .product-grid {
@@ -288,7 +293,7 @@ body {
     font-size: 20px;
     margin: 0;
     color: #112D4E;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
@@ -296,7 +301,7 @@ body {
     font-size: 18px;
     color: #112D4E;
     margin: 10px 0;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
@@ -311,7 +316,7 @@ body {
     text-align: center;
     font-size: 16px;
     color: #112D4E;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
 
