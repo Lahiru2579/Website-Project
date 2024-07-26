@@ -4,12 +4,8 @@ body {
     padding: 0;
     background-color: #DBE2EF;
     color: #212529;
-    height: 100%; /* Make sure the body takes the full height of the viewport */
 }
 
-html {
-    height: 100%; /* Make sure the html takes the full height of the viewport */
-}
 
 .navbar {
     display: flex;
@@ -80,14 +76,13 @@ html {
     align-items: center;
     margin-right: 100px;
 }
-
 .cart-icon {
     width: 30px;
     height: 30px;
 }
 
 .secondary-navbar {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px 20px;
 }
 
@@ -102,7 +97,7 @@ html {
 }
 
 .secondary-navbar ul li {
-    padding: 0 50px;
+    padding: auto;
 }
 
 .secondary-navbar ul li a {
@@ -117,61 +112,59 @@ html {
 .secondary-navbar ul li a:hover {
     color: #112D4E;
 }
-.secondary-navbar ul li a {
-    text-decoration: none;
-    color: #607d8b;
-    font-weight: regular;
-    font-family: 'Inter', sans-serif;
+
+
+.Open-image {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-right: 20px;
+    text-align: right;
 }
 
-.secondary-navbar ul li a:hover {
-    color: #112D4E;
+.Open-image img {
+    width: 500px; 
+    height: auto;
+    border-radius: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(30%);
 }
 
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .container {
     position: relative;
     width: 100%;
-    height: 50%; /* Adjust this value to decrease the height of the container */
+    height: 50%; 
     text-align: center;
 }
-
 .container img {
-    width: 100%; /* Make the image take full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: 50%; 
 }
-
 .image {
     display: block;
     width: 100%;
-    height:20px;
+    height: 20px;
 }
-
 .overlay {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-    color: #f1f1f1; /* White text color */
-    width: 100%; /* Make the overlay take the full width of the container */
-    height: 100%; /* Adjust the height value as needed */
-    display: flex; /* Use flexbox to center content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
     text-align: center;
 }
-
 .text {
     font-size: 8em;
     padding: 20px;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bolder;
 }
-
 
 .text-section {
     flex: 1;
@@ -180,44 +173,112 @@ body, html {
     flex-direction: column;
     justify-content: center;
 }
-
 .text-section h1 {
     margin: 0;
     font-size: 36px;
     color: #273B61;
 }
-
 .text-section p {
     margin-top: 20px;
     font-size: 18px;
     color: #555;
 }
 
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 products per row */
-    grid-template-rows: repeat(3, auto); /* 3 rows */
-    gap: 20px; /* Space between product cards */
+
+
+@keyframes border-pulse {
+    0% {
+        transform: scale(1);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        border-radius: 50px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.new-arrivals {
+    text-align: center;
+    padding: 30px 10px;
+    background-color: #112D4E;
+}
+
+.new-arrivals h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 200;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #FFFFFF;
     padding: 20px;
-    max-width: 1200px;
-    margin: auto;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.product-item button {
+    background-color: #004080;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.product-item button:hover {
+    background-color: #112D4E;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .product-card {
     background-color: #fff;
     overflow: hidden;
+    width: calc(25% - 20px); 
     text-align: center;
+    margin-bottom: 100px; 
+    margin: 0 20px 100px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .product-image {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: auto;
+    display: block;
 }
 
 .product-info {
@@ -226,43 +287,155 @@ body, html {
 
 .product-title {
     font-size: 20px;
+    margin: 0;
     color: #112D4E;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
 }
 
 .product-price {
     font-size: 18px;
     color: #112D4E;
     margin: 10px 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
 }
 
 .product-sizes-cart {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 .product-sizes {
     flex-grow: 1;
+    text-align: center;
     font-size: 16px;
     color: #112D4E;
     font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
 }
 
 .add-to-cart-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 4px;
-    background-color: #fff;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 4px; 
+    background-color: #fff; 
+    margin-left: 10px; 
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .add-to-cart svg {
     width: 22px;
     height: 22px;
-    color: #0f0e0e;
     cursor: pointer;
+    color: #0f0e0e;
+}
+
+
+@media (min-width: 1200px) {
+    .product-card {
+        width: calc(18% - 20px); 
+    }
+
+    .product-title {
+        font-size: 18px; 
+    }
+
+    .product-price {
+        font-size: 16px; 
+    }
+
+    .product-sizes {
+        font-size: 14px; 
+    }
+}
+
+
+.footer {
+    background-color: #DBE2EF;
+    color: #112D4E;
+    padding: 40px 0;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px; /* Padding to ensure content doesn't touch the edges */
+    width: 100%;
+    max-width: 100%; /* Ensures the container takes full width */
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.footer-section {
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #f0f0f0;
+}
+
+.footer-bottom p {
+    margin: 0;
 }
