@@ -1,11 +1,5 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #DBE2EF;
-    color: #212529;
-}
-.navbar {
+
+ .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,6 +132,14 @@ body {
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
+.content{
+    color: #112D4E;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
 .collections h1 {
     font-size: 2.5em;
     margin-bottom: 30px;
@@ -169,6 +171,7 @@ body {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #ddd;
+
 }
 
 .collection-item h2 {
@@ -209,7 +212,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateX(30%);
 }
-.open-text p {
+/* .open-text {
     margin-left: 60px;
     flex: 1;
     display: flex;
@@ -217,7 +220,48 @@ body {
     justify-content: center;
     align-items: center;
     color: #112D4E;
+    text-align: center; /* Ensure the text in the container is centered */
+
+
+/* .open-text h1, .open-text p {
+    color: #112D4E;
+} */ 
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    gap: 20px; /* Add space between the image and text */
 }
+
+.content-wrapper img {
+    max-width: 40%; /* Adjust the image size */
+    height: auto;
+    border-radius: 10px; /* Add border radius to the image */
+}
+
+.text-wrapper {
+    max-width: 60%; /* Adjust the text container size */
+    color: #112D4E;
+}
+
+.text-wrapper h2 {
+    margin-bottom: 10px;
+    align-items: center;
+    font-size:70px;
+}
+
+.text-wrapper p {
+    color: #112D4E;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+
+
+
 
 footer {
     background-color: #1a2c46;
@@ -301,4 +345,6 @@ footer {
 .socials img {
     width: 50px;
     height: 50px;
-}
+} 
+
+
